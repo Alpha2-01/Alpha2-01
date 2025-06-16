@@ -5,9 +5,36 @@
     width: 100px;
     height: 100px;
     background-color: red;
-    transition: 150ms ease;
+    transition: 300ms ease;
+
+    animation-duration: 7s;
+    animation-name: spin;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
 }
 .box:hover{
     background-color: aqua;
     scale: 1.2;
+}
+@keyframes spin{
+    0%{
+
+    }
+    10%{
+        transform: rotate(0deg);
+        border-radius: 0%;
+    }
+    50%{
+        transform: rotate(360deg);
+        border-radius: 50%;
+        background-color: blue;
+    }
+    90%{
+        transform: rotate(0deg);
+        border-radius: 0%;
+        background-color: yellow;
+    }
+    100%{
+
+    }
 }
